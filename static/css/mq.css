@@ -1,0 +1,503 @@
+html, body {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+#menu-current {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 65px;
+  z-index: 0;
+}
+
+/* MENU ITEM */
+.play-again {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+  margin:10px;
+  padding: 10px;
+  font: 3em "Press Start 2P", "Tahoma", sans-serif;
+  color:#ffffff;
+  text-shadow: 2px 2px #111111;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  border: 3px solid #666666;
+  background: gold;
+}
+.menu-item {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+  margin:10px;
+  padding: 10px;
+  font: 2em "Press Start 2P", "Tahoma", sans-serif;
+  color:#333333;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  border: 3px solid #666666;
+
+  /*   background-image: url('../images/dark.gif') !important;*/
+  background-repeat: no-repeat !important;
+  /*background-attachment: fixed;*/
+  background-position: left top !important;
+   background-size: 80px 60px !important;
+}
+.menu-item-name {
+  float: left;
+  clear: both;
+  padding-top:5px;
+  font-size: 0.6em;
+}
+.menu-item-hp-current {
+  float: right;
+  clear: left;
+  font-size: 0.5em;
+  font-weight: bold;
+  color: #ff3333;
+  text-shadow: 2px 2px #555555;
+}
+.menu-item-hp-current::before {
+ content: "TASKS: ";
+ color: #666666;
+ font-size: 1em;
+ text-shadow: 0px 0px #333333;
+}
+
+.menu-item-gearscore::before {
+  font-size: 0.25em;
+  content: "CHITS: ";
+  color: #ffffff;
+  text-shadow: 1px 1px #333333;
+}
+.menu-item-gearscore {
+  float: left;
+  font-size: 1em;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 2px 2px #333333;
+}
+
+/* GEAR SCORE */
+
+.gear-trash {
+
+}
+.gear-common {
+  background: #FF714B;
+  color: #FFFFFF;
+}
+.gear-rare {
+  background: #C60052;
+  color: #FFFFFF;
+}
+.gear-relic {
+  background: #540045;
+  color: #FFFFFF;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-pow {
+  color: gold;
+  text-shadow: 2px 2px #999999;
+}
+#user-combo::before {
+  font-size: 0.6em;
+  content: "x";
+}
+#user-combo {
+  margin-left:10px;
+  font-size: 1.5em;
+  color: #ffaa00;
+  font-style: italic;
+  text-shadow: 3px 3px #3333ff;
+}
+
+.gear-1 {background: #e0e0e0;} /*"Trash"*/
+.gear-2 {background: #e6ee9c;}/*"Common"*/
+.gear-3 {background: #66bb6a;}/*"Uncommon"*/
+.gear-4 {background: #26c6da;}/*"Rare"*/
+.gear-5 {background: #2196f3;}/*"Relic"*/
+.gear-6 {background: #e91e63;}/*"Superb"*/
+.gear-7 {background: #8e24aa;}/*"Legendary"*/
+.gear-8 {background: #fbc02d;}/*"Epic"*/
+.gear-9 {background: #ff5722;}/*"Awesome"*/
+.gear-10 {background: #ff4000;}/*"Mythic"*/
+.gear-11 {background: #e1f5fe;}/*"INDEX"*/
+.gear-12 {background: #212121;color:white;}/*"C H A O S"*/
+
+
+
+.gear-buffer {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+  margin:10px;
+  padding: 10px;
+  font: 1em "Press Start 2P", "Tahoma", sans-serif;
+  color:#333333;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  border: 3px solid #666666;
+  height: 5px;
+
+  background-image: url('../images/wd.png');
+  background-repeat: repeat-x;
+  /*background-attachment: fixed;*/
+  background-position: center bottom; 
+}
+
+.gear-boss {
+  background: #111111;
+  color:gold;
+  padding:30px;padding-top:160px;padding-bottom:160px;
+  border: 10px dotted #888888;
+  margin-top:20px;margin-bottom:20px;
+
+  background-image: url('../images/fire.gif') !important;
+  background-repeat: repeat-x !important;
+  /*background-attachment: fixed;*/
+  background-position: center bottom !important;
+  background-size: auto !important;
+}
+.dead-boss {
+  color:gold;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+  margin:10px;
+  padding: 10px;
+  font: 2em "Press Start 2P", "Tahoma", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  border: 3px solid #666666;
+  text-shadow: 2px 2px #aaaaaa;
+
+    background-image: url('../images/fire.gif') !important;
+  background-repeat: repeat-x !important;
+  /*background-attachment: fixed;*/
+  background-position: center bottom !important;
+  background-size: auto !important;
+}
+.lootimg {
+  border: 0;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.gear-treasure {
+  color:gold;
+  background-image: url('../images/tr.gif') !important;
+  background-repeat: repeat-x !important;
+  /*background-attachment: fixed;*/
+  background-position: center bottom !important;
+  background-size: auto !important;
+
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+  margin:10px;
+  padding: 10px;
+  font: 3em "Press Start 2P", "Tahoma", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  border: 3px solid #666666;
+  text-shadow: 2px 2px #aaaaaa;
+}
+.gear-hero {
+  background: lightblue;
+  color:gold;
+  padding:30px;padding-top:260px;padding-bottom:260px;
+  border: 20px dotted gold;
+  margin-top:20px;margin-bottom:20px;
+  text-shadow: 2px 2px #222222;
+}
+
+.sp1 {
+  font-size: 0.5em;
+  font-weight: bold;
+  position:fixed;
+  top: 10%;
+  left: 15%;
+  text-shadow: 2px 2px #ff0000;
+  z-index: 3;
+}
+.sp2 {
+  font-size: 0.5em;
+  font-weight: bold;
+  position:fixed;
+  top: 15%;
+  left: 50%;
+  text-shadow: 2px 2px #ff0000;
+  z-index: 3;
+}
+.sp3 {
+  font-size: 0.5em;
+  font-weight: bold;
+  position:fixed;
+  top: 20%;
+  left: 75%;
+  text-shadow: 2px 2px #ff0000;
+  z-index: 3;
+}
+
+.hud {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 5;
+  padding:10px;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+  font: 1em "Press Start 2P", "Tahoma", sans-serif;
+  margin:0px;
+  color:#999999;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  border-bottom: 5px solid #666666;
+}
+.ded {
+  color:red;
+  text-shadow: 2px 2px #cccccc;
+  font-size: 3em;
+}
+.spark {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  animation: shoot 9s ease-out infinite;
+  animation-name: shoot, fade;
+  z-index: 6;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),0 6px 20px 0 rgba(0,0,0,0.5) !important;
+}
+.spark:nth-child(1) {
+  transform: translate(39vw,4vh);
+  background: #ffcc00;
+  animation-duration: 1.18s;
+  animation-delay: -0.0234s;
+}
+.spark:nth-child(2) {
+  transform: translate(39vw,24vh);
+  background: #ccff44;
+  animation-duration: 1.18s;
+  animation-delay: -0.0234s;
+}
+.spark:nth-child(3) {
+  transform: translate(39vw,54vh);
+  background: #cccdda;
+  animation-duration: 1.18s;
+  animation-delay: -0.0234s;
+}
+.spark:nth-child(4) {
+  transform: translate(59vw,94vh);
+  background: #44ffaa;
+  animation-duration: 1.18s;
+  animation-delay: -0.0234s;
+}
+.spark:nth-child(5) {
+  transform: translate(19vw,14vh);
+  background: #ffcc00;
+  animation-duration: 1.18s;
+  animation-delay: -0.0234s;
+}
+.spark:nth-child(6) {
+  transform: translate(69vw,64vh);
+  background: #4cf3a1;
+  animation-duration: 1.18s;
+  animation-delay: -0.0234s;
+}
+.spark:nth-child(7) {
+  transform: translate(99vw,14vh);
+  background: #335def;
+  animation-duration: 1.18s;
+  animation-delay: -0.0234s;
+}
+.spark:nth-child(8) {
+  transform: translate(32vw,22vh);
+  background: #feca33;
+  animation-duration: 1.18s;
+  animation-delay: -0.0234s;
+}
+.spark:nth-child(9) {
+  transform: translate(9vw,40vh);
+  background: #b33a1a;
+  animation-duration: 1.18s;
+  animation-delay: -0.0234s;
+}
+.spark:nth-child(10) {
+  transform: translate(39vw,84vh);
+  background: #ada1a1;
+  animation-duration: 1.18s;
+  animation-delay: -0.0234s;
+}
+@keyframes shoot {
+  0% {
+    transform: translate(50vw,50vh);
+  }
+}
+@keyframes fade {
+  to {
+    opacity: 0
+  }
+}
+
+/* Menu */
+
+.game-menu {
+  display: none;
+  z-index: 2;
+  font: 1em "Press Start 2P", "Tahoma", sans-serif;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    padding: 20px;
+    background: rgba(100,100,100,0.8)
+}
+.hud-menu-open {
+  float: right;
+  padding-right:30px;
+  background: transparent;/*#00cc66;*/
+  color: white;
+  text-shadow: 2px 2px #333333;
+  padding:10px;
+  box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  border: 3px solid #ffffff;
+  border-radius: 50px 0px 0px 50px;
+}
+.game-menu-open {
+  background: #00cc66;
+  color: white;
+  text-shadow: 2px 2px #333333;
+  padding:10px;
+  width: 100%;
+  font: 1em "Press Start 2P", "Tahoma", sans-serif;
+  box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  left:0;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  text-align: center;
+  border-top: 3px solid #ffffff;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+
+}
+
+.game-submenu {
+  display: none;
+}
+.game-menu-button {
+  font-size: 1em;
+  background: #333333;
+  color: white;
+  text-shadow: 2px 2px #999999;
+  padding:10px;
+  border-bottom: 5px solid #eeeeee;
+}
+.game-menu-close {
+  z-index: 3;
+  display: none;
+  background: #ff3300;
+  color: white;
+  text-shadow: 2px 2px #333333;
+  padding:10px;
+  width: 100%;
+  font: 1em "Press Start 2P", "Tahoma", sans-serif;
+  box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  left:0;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  text-align: center;
+  border-top: 3px solid #ffffff;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+
+}
+
+.game-menu-options {
+  background: #ffffff;
+  color: #000000;
+  border: 3px solid #000000;
+  padding:10px;
+  margin-bottom: 10px;
+}
+
+.game-menu-character {}
+.game-menu-worldselect {}
+.game-menu-localmap {}
+.game-menu-graveyard {}
+.game-menu-help {}
+.game-menu-opts {}
+
+.ui-localmap {
+  border-spacing: 0;
+  border: 4px solid #ffffff;
+  background-image: url('../images/mapbg.png');
+  background-repeat: repeat;
+}
+.ui-localmap td {
+  padding:5px;
+}
+
+.ui-charsh {
+  border-spacing: 0;
+  border: 4px solid #ffffff;
+}
+.ui-charsh td {
+  padding:5px;
+  border: 0; /*4px solid #ffffff;*/
+  background: #000000;
+  color: white;
+}
+.ui-charsh-emp {
+  padding:5px;
+  border: 0;
+  background: transparent !important;
+  color: white;
+}
+
+#announcer {
+  display: none;
+  pointer-events: none;
+   font: 4em "Press Start 2P", "Tahoma", sans-serif;
+   width:100%;
+   height: 100%;
+   position: fixed;
+   top:25%;
+   left: 0;
+   background: transparent;
+   color: gold;
+   text-shadow: 4px 4px #111111;
+   z-index: 7;
+   text-align: center;
+
+   background-image: url('../images/attack.gif');
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-position: center top; 
+}
+
+#act-character {}
+#act-worldselect {}
+#act-localmap {}
+#act-graveyard {}
+#act-help {}
+#act-opts {}

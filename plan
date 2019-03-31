@@ -1,0 +1,66 @@
+<!--
+
+Hard 
+    // Battle Arena PvP
+    // XP/HP/DMG Layout and Scaling, Balance
+
+Requires logic
+  // 1-3 AoE attacks
+  // Keyboard options
+  // Mob Multipliers (Boss Fights)
+  // Loot Enhancers (Combos, Good Play)
+  // Advanced/Basic Combat Modes
+  // Grid Light Up Pattern Match (LoZ Flute) for Magic 
+  
+New Screen
+  // Add Graveyard w/ Times
+  // Different worlds/Sm3 World Picker
+  // Warp Items
+  // Best Loot Screen (Current Gear)
+  
+Easy
+// Battle Arena PvE
+// Super bar charge up
+// Potions/OneTimeUsers
+// Sub-bosses
+// fix timer so its absolute instead of relative
+
+v0.1
+~ Tap to knock down enemies
+~ POW maintained over refresh
+~ animations via css
+~ basics of gameplay, all items onscreen
+~ smooth with 1000 on page items
+~ mvp
+
+v0.2 current
+~ 1// Keep Bosses Dead
+~ 2// Boss Defeat Animation (particle explosion)
+~ 3// unksippage bosses
+~ Added boss times to win screen
+~ Added combo multiplier
+~ Added gamedata autoupgrade (hopefully no reset, but new ver)
+~ Added boss flair
+
+v0.3 dev
+~ Menu Slider and Options
+~ Announcer Added
+~ - Boss Loot
+~ - Game Settings (moving reset button)
+- Character Sheet
+- World Selector
+- Local Map
+- save/load
+- Streak/Combo color reminder
+- Player Travel: Use N/S/E/W directions to move areas
+- Randomized Boss Location
+- Power Ups and Potions
+- FIX: refresh on boss death but no treasure or direction
+
+v0.4
+- New GIF art
+- game story
+- game credit screen
+- game cinematics
+
+-->
